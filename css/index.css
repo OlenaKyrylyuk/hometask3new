@@ -144,7 +144,7 @@
  }
 
  .column {
-  background-color: green;
+  background-color: orange;
   width: 31%;
   height: 111px;
   margin: auto;
@@ -154,26 +154,30 @@
   display: flex;
  }
 
- footer {
+ .footer {
   display: flex;
  }
 
- .contactsimg {
 
-  width: 31%;
+ .contactsimg   {  
+    width: 31%;
 
-  margin: auto;
- }
+    margin: auto;
+}
+.contacts  {  
+    width: 31%;
+  text-align: center;
+    margin: auto;
+}
 
- .contacts {
+form  {  
+    width: 31%;
+   
+    margin: auto;
+}
 
-  width: 31%;
-
- }
-
- .form {
-
-  width: 31%;
-
- }
- 
+.contactsimg img  {  
+    width: 100%;
+   
+    
+}
