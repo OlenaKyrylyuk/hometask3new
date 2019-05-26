@@ -7,69 +7,71 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css" type="text/css" />
     <title>SuccessChoice</title>
-
 </head>
 
 <body>
-
-    <header>
-
-        <a href="">
-                <img src="img/logo.png" alt="logo" id="logo" >
+    <header id="home">
+        <div class="head">
+            <div class="logo">
+                <a href="">
+                <img src="img/logo.png" alt="logo"  >
             </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Головна</a>
-                </li>
-                <li>
-                    <a href="">Освіта</a>
-                </li>
-                <li>
-                    <a href="">Про нас</a>
-                </li>
-                <li>
-                    <a href="">Тести</a>
-                </li>
-                <li>
-                    <a href="">Відгуки</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="clear"></div>
-
-
-    </header>
-    <main>
-
-        <div class="headerimg">
-            <img src="img/imgheader.png" alt="imgheader">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="">Головна</a>
+                    </li>
+                    <li>
+                        <a href="">Освіта</a>
+                    </li>
+                    <li>
+                        <a href="">Про нас</a>
+                    </li>
+                    <li>
+                        <a href="">Тести</a>
+                    </li>
+                    <li>
+                        <a href="">Відгуки</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-
+    </header>
+    <div class="headerimg"> </div>
+    <main>
         <section>
             <h1>Хто ми?</h1>
-            <p id="description">
+            <p class="description">
                 Допоможемо вашому підлітку навчитися думати, вибирати і діяти в оточуючому його морі можливостей, і при цьому розуміти і любити себе, близьких людей і цей світ.
             </p>
-            <div class="hightschool">
+            <div class="hightschoolresponsive">
+                <div class="hightschool">
+                    <div class="hightschooltitle">
+                        <h2>Старші класи школи.
+                            <br>Що далі?</h2>
+                    </div>
+                    <div class="hightschoolimg">
+                        <img src="img/school-girl.jpg" alt="school-girl">
+                    </div>
+                </div>
                 <div class="hightschooltext">
-                    <h2><i>Старші класи школи.Що далі?</i></h2>
-                    <p>
-                        <i>Неправильний вибір освітнього закладу і професії –  це помилки ціною в частину життя або і взагалі ціною у все життя. <br> -Страхи, недооцінка/переоцінка себе, упередження, кліше – це внутрішній світ багатьох старшокласників. <br> -І не кожен із них розмовляє з
-                близькими людьми про свої мрії, життєві цілі і про сенс свого життя. Не кожен навіть думає про це.</i>
+                    <h4>Старші класи школи.
+                        <br>Що далі?
+                    </h4>
+                    <p id="hightschooltext"> -Неправильний вибір освітнього закладу і професії – це помилки ціною в частину життя або і взагалі ціною у все життя. <br> -Страхи, недооцінка/переоцінка себе, упередження, кліше – це внутрішній світ багатьох старшокласників. <br>                        -І не кожен із них розмовляє з близькими людьми про свої мрії, життєві цілі і про сенс свого життя. Не кожен навіть думає про це.
                     </p>
                 </div>
-                <div class="hightschoolimg">
-                    <img src="img/schoolgirl.jpg" alt="">
-                </div>
-
-                <div class="clear"></div>
             </div>
-
         </section>
-        <div class="bgimg bgroundtext">
-            <!--<img src="img/bground.jpg" alt="">-->
-
+        <div class="bgroundimgwithtext">
+            <div class="bgroundtext">
+                <p>Літній профорієнтаційний табір</p>
+                <div class="summercampregistration">
+                    <p>старт 31 травня</p>
+                    <button class="summerbutton">Зареєструватись</button>
+                </div>
+            </div>
         </div>
         <section>
             <h2>Ми запрошуємо учнів старших класів стати учасниками літнього табору профорієнтації, під час якого вони можуть:</h2>
@@ -88,37 +90,25 @@
                 </p>
             </div>
         </section>
-
-        <div class="bgimg">
-            <img src="img/bground.jpg" alt="">
+        <div class="bgroundimg">
         </div>
         <section>
-
             <h2>Освіта</h2>
             <div class="threecolumn">
-
                 <div class="column"></div>
                 <div class="column"></div>
                 <div class="column"></div>
-
             </div>
-
         </section>
         <section>
-
             <h2>Кар'єрні можливості</h2>
             <div class="threecolumn">
-
                 <div class="column"></div>
                 <div class="column"></div>
                 <div class="column"></div>
-
-
             </div>
-
         </section>
-        <div class="bgimg">
-            <img src="img/bground.jpg" alt="">
+        <div class="bgroundimg">
         </div>
         <section>
             <h2>ВІдгуки</h2>
@@ -129,8 +119,8 @@
         </section>
         <section>
             <h2>Наша команда</h2>
-            <div class="comanda">
-                <img src="" alt="">
+            <div class="team">
+                <img src="img/school-girl.jpg" alt="director">
                 <p>
                     Юлія Захарко.Директор
                 </p>
@@ -140,35 +130,33 @@
     <footer>
         <h2>Контакти</h2>
         <div class="footer">
-        <div class="contactsimg">
-            <img src="img/maps.png" alt="">
-        </div>
-        <div class="contacts">
-            <h3>Адреса</h3>
-            <p>
-                м.Львів, вул.Кн.Ольги 29а
-            </p>
-            <h3>Номери телефонів</h3>
-            <p>
-                +322 56 77 89 <br> +38098 65 77 899
-            </p>
-            <h3>Email</h3>
-            <p>
-                companysc@gmail.com
-            </p>
-        </div>
-        <form>
-            <label>Якщо у вас залишились питання-залиште Ваші контактні дані і наш менеджер зв'яжеться з Вами у найбличий час і проконсультує</label><br>
-            <input type="text" placeholder="name" /> <br>
-            <input type="tel" placeholder="+3846789456" /> <br>
-            <input type="email" placeholder="your email" /> <br>
-            <input type="submit" value="Відправити дані" />
-        </form>
+            <div class="contactsimg">
+                <img src="img/maps.png" alt="maps">
+            </div>
+            <div class="contacts">
+                <h3>Адреса</h3>
+                <p>
+                    м.Львів, вул.Кн.Ольги 29а
+                </p>
+                <h3>Номери телефонів</h3>
+                <p>
+                    +322 56 77 89 <br> +38098 65 77 899
+                </p>
+                <h3>Email</h3>
+                <p>
+                    companysc@gmail.com
+                </p>
+            </div>
+            <!--<form>-->
+            <!--    <label>Якщо у вас залишились питання-залиште Ваші контактні дані і наш менеджер зв'яжеться з Вами у найбличий час і проконсультує</label><br>-->
+            <!--    <input type="text" placeholder="name" /> <br>-->
+            <!--    <input type="tel" placeholder="+3846789456" /> <br>-->
+            <!--    <input type="email" placeholder="your email" /> <br>-->
+            <!--    <input type="submit" value="Відправити дані" />-->
+            <!--</form>-->
         </div>
     </footer>
-    <div class="bgimg">
-
-        <img src="img/bground.jpg" alt="">
+    <div class="bgroundimg">
     </div>
 </body>
 

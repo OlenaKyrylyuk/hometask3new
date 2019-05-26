@@ -1,131 +1,251 @@
- #logo {
-  height: auto;
-  width: 300px;
-
+ @import url('https://fonts.googleapis.com/css?family=Amaranth|Bangers|Indie+Flower|Molengo|Patua+One|Ropa+Sans|Shadows+Into+Light&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Caveat|Kurale|Tenor+Sans&display=swap');
+ :root {
+  scroll-behavior: smooth;
  }
 
- nav li a {
-  float: left;
-  text-decoration: none;
-  font-size: 25px;
- }
-
- nav li a:hover {
-
-  /*color: #9c1f4d;*/
-  color: orange;
-
- }
-
- nav li {
-
-  list-style: none;
-  float: right;
-  padding: 65px 10px;
-
- }
-
- nav li {
-
-  list-style: none;
-  float: right;
-  padding: 65px 10px;
-
- }
-
- #logo {
-  float: left;
- }
-
- .clear {
-  clear: both;
- }
-
- .headerimg {
-  width: 100%;
-  height: 342px;
-  overflow: hidden;
-
- }
-
- .headerimg img {
-  width: 100%;
-  margin-top: -45px;
+ body {
+  margin: auto;
  }
 
  header,
  section,
  footer {
-  max-width: 1100px;
+  max-width: 980px;
   margin: 0 auto;
  }
 
- .bgimg {
-  width: 100%;
-  height: 40px;
-  overflow: hidden;
- }
-
- .bgimg img {
-  width: 100%;
-  margin-top: -255px;
- }
-
  h1,
- h2 {
+ h2,
+ h4,
+ h3 {
   color: #9c1f4d;
   text-align: center;
-  font-family: sans-serif;
-  font-size: 40px;
+  font-family: 'Kurale', serif;
+  font-size: 30px;
  }
 
- p {
-  text-align: center;
+
+ .logo img {
+  height: auto;
+  width: 150px;
  }
+
+ nav ul {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  justify-content: space-around;
+ }
+
+ nav li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Alegreya SC', serif;
+ }
+
+ nav li a:hover {
+  /*color: #9c1f4d;*/
+  color: orange;
+  text-decoration: underline;
+ }
+
+ .headerimg {
+  background-image: url(../img/imgheader.png);
+  min-height: 200px;
+  background-position: center;
+  background-size: cover;
+ }
+
+ @media (min-width: 450px) {
+  header .head {
+   display: flex;
+   align-items: center;
+  }
+  header .menu {
+   flex: 1;
+  }
+  .headerimg {
+   min-height: 400px;
+   background-position: center;
+   background-size: cover;
+  }
+  nav li a {
+   text-decoration: none;
+   font-family: 'Alegreya SC', serif;
+  }
+ }
+
+ @media (min-width: 650px) {
+  .logo img {
+   height: auto;
+   width: 300px;
+  }
+  nav li a {
+   font-size: 20px;
+  }
+ }
+
+ h4 {
+  display: none;
+ }
+
+ .description {
+  text-align: center;
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 17px;
+  width: 85%;
+  margin: auto;
+ }
+
 
  .hightschool {
-  width: 100%;
-  margin-top: 66px;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
  }
 
- .hightschool p {
-  text-align: left;
-  margin: 40px 0px 0px 53px;
-  font-size: 20px;
+ #hightschooltext {
+  width: 90%;
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+  margin: auto;
  }
 
  .hightschool img {
-  width: 100%;
-  margin: 10px 99px 10px 5px;
-
- }
-
- .hightschoolimg {
-  width: 30%;
-  float: left;
-  margin: 10px 65px;
- }
-
- .hightschooltext h2 {
-  font-size: 22px;
-  margin: 30px 0px;
-
- }
-
-
- .hightschooltext {
-  float: left;
-  width: 50%;
-  margin-top: 19px;
- }
-
- #description {
   width: 80%;
-  margin: auto;
-  font-size: 25px;
-  font-family: helvetica;
+  padding-left: 25px;
  }
+
+ .hightschooltitle h2 {
+  font-size: 18px;
+ }
+
+ @media (min-width: 450px) {
+  .hightschoolresponsive {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin-top: 15px;
+  }
+  .hightschool {
+   width: 45%;
+  }
+  .hightschooltitle h2 {
+   display: none;
+  }
+
+  .hightschooltext h4 {
+   font-size: 18px;
+   text-align: center;
+   display: block;
+  }
+  .hightschool img {
+   width: 100%;
+   padding: 0;
+
+  }
+  .hightschooltext {
+   width: 45%;
+   font-size: 20px;
+  }
+
+  .description {
+   font-size: 22px;
+  }
+ }
+
+ @media (min-width:650px) {
+  #hightschooltext {
+   font-size: 26px;
+  }
+  .hightschooltext h4 {
+   font-size: 22px;
+  }
+ }
+
+ .bgroundimgwithtext {
+  background-image: url(../img/bground.jpg);
+  height: 145px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ }
+
+ .bgroundimg {
+  background-image: url(../img/bground.jpg);
+  height: 40px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ }
+
+ .bgroundtext:first-child {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Tenor Sans', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+ }
+
+ .summercampregistration {
+  display: flex;
+  justify-content: space-around;
+
+ }
+
+ .summercampregistration p {
+  color: yellow;
+  text-transform: uppercase;
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+ }
+
+ .summerbutton {
+  display: inline-block;
+  margin: 20px;
+  border: 2px solid #efbcc1;
+  font-size: 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: #e3058a;
+ }
+
+ .summerbutton:hover {
+  color: #d1effa;
+  background-color: #4a4d98;
+  cursor: pointer;
+ }
+
+ @media (min-width:500px) {
+  .bgroundtext:first-child {
+   text-transform: uppercase;
+   font-size: 24px;
+  }
+  .bgroundtext {
+   max-width: 980px;
+   margin: auto;
+  }
+  .summercampregistration p {
+   font-size: 28px;
+  }
+  .bgroundimgwithtext {
+   height: 175px;
+  }
+ }
+
+
+
 
  section:nth-child(4) p {
   text-align: center;
@@ -144,7 +264,7 @@
  }
 
  .column {
-  background-color: orange;
+  background-color: green;
   width: 31%;
   height: 111px;
   margin: auto;
@@ -159,25 +279,27 @@
  }
 
 
- .contactsimg   {  
-    width: 31%;
+ .contactsimg {
+  width: 31%;
 
-    margin: auto;
-}
-.contacts  {  
-    width: 31%;
+  margin: auto;
+ }
+
+ .contacts {
+  width: 31%;
   text-align: center;
-    margin: auto;
-}
+  margin: auto;
+ }
 
-form  {  
-    width: 31%;
-   
-    margin: auto;
-}
+ form {
+  width: 31%;
 
-.contactsimg img  {  
-    width: 100%;
-   
-    
-}
+  margin: auto;
+ }
+
+ .contactsimg img {
+  width: 100%;
+
+
+ }
+ 
