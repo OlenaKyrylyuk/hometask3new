@@ -127,7 +127,7 @@
    display: flex;
    align-items: center;
    justify-content: space-around;
-   margin-top: 15px;
+       margin: 15px 0 40px 0;
   }
   .hightschool {
    width: 45%;
@@ -278,10 +278,50 @@
  .summercircle:nth-child(4) {
   background-color: #f6a2bf;
  }
-
+  @media (min-width:375px) {
+  .summercircle {
+   width: 61%;
+   
+  }
+ }
+ @media (min-width:425px) {
+  .summercircle {
+   width: 54%;
+   
+  }
+ }
+  @media (min-width:500px) {
+   .summercamp {
+    width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+   grid-gap: 15px;
+  }
+     .summercircle {
+   width: 100%;
+  }
+  
+ }
+   @media (min-width:550px) {
+   .summercamp {
+    width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+   grid-gap: 15px;
+  }
+     .summercircle {
+   width: 86%;
+  }
+  
+ }
+ 
+ 
  @media (min-width:650px) {
   .summercamp {
-   display: flex;
+    width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr ;
+   grid-gap: 15px;
   }
   .summercircle p {
    font-size: 18px;
@@ -289,9 +329,8 @@
    padding: 0;
   }
   .summercircle {
-   width: 25%;
-   height: 170px;
-
+ 
+   height: 150px;
   }
  }
 
@@ -409,10 +448,11 @@
   width: 100%;
  }
 .rewiewsfoto{
- overflow: hidden;
- height: 230px;
-    border-radius: 100%;
+     width: 55%;
+    margin: auto;
 }
+ 
+
  @media (min-width: 500px) {
   .rewiewstext {
    width: 100%;
@@ -420,23 +460,32 @@
    grid-template-columns: 1fr 1fr;
    grid-gap: 15px;
   }
-  .rewiewscolumn {
-   width: 100%;
-  }
-
-
+.rewiewscolumn{
+ display: block;
+}
+.rewiewsfoto{
+     width: 100%;
+    margin: auto;
+}
+ 
  }
 
  @media (min-width: 750px) {
   .rewiewstext {
    width: 100%;
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr ;
    grid-gap: 15px;
   }
   .rewiewscolumn img {
    width: 100%;
   }
+  .rewiewscolumn{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+   grid-gap: 0px;
+       align-items: center;
+ }
  }
 
  .teamfoto img {
@@ -485,6 +534,21 @@
  }
  form {
   margin: auto;
+  text-align: center;
+  background: linear-gradient(to top left, #ffa2fb,#ecfeff );
+ }
+ 
+ form input{
+  margin:10px;
+  border-radius: 10px;
+      padding: 5px;
+ }
+ form input:last-child{
+   background: linear-gradient(to top left, #00efff, #ff0bd6);
+       border: 0px;
+    padding: 10px 20px;
+        margin: 15px 0 70px;
+
  }
  .contactsimg img {
   width: 100%;
@@ -503,6 +567,8 @@
    width: 30%;
   }
  }
+ 
+ 
 #prealoder{
 position: fixed;
 left: 0;
@@ -531,6 +597,6 @@ line-height:35px;}
 position: absolute;
 width: 41px;
 height: 41px;
-background: url(..img/ball-triangle.svg) center center no-repeat;
+background: url(../img/ball-triangle.svg) center center no-repeat;
 background-size:41px;    
 margin: -16px 0 0 -16px;}
