@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css" type="text/css" />
     <title>SuccessChoice</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
     <div id="prealoder">
         <div class="contpre">
-            <span class="svg_anm" >
+            <span class="svg_anm">
                 <!--<img src="img/ball-triangle.svg" alt="">-->
             </span>
             <br>Зачекайте<br><small>сторінка завантажується</small></div>
@@ -46,7 +47,32 @@
             </nav>
         </div>
     </header>
-    <div class="headerimg"> </div>
+     <section>
+        
+        <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
+    </section>
+       <button class="click-me">Click Me!</button>
+    <div class="headerimg">
+        <div id="clockdiv">
+            <p>ДО СТАРТУ НОВОГО КУРСУ ЗАЛИШИЛОСЬ</p>
+            <div>
+                <span class="days"></span>
+                <div class="smalltext">Днів</div>
+            </div>
+            <div>
+                <span class="hours"></span>
+                <div class="smalltext">Годин</div>
+            </div>
+            <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Хвилин</div>
+            </div>
+            <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Секунд</div>
+            </div>
+        </div>
+    </div>
     <main>
         <section id="about-us">
             <h1>Хто ми?</h1>
@@ -76,7 +102,7 @@
             <div class="bgroundtext">
                 <p>Літній профорієнтаційний табір</p>
                 <div class="summercampregistration">
-                    <p>старт 31 травня</p>
+                    <p>старт 15 травня</p>
                     <button class="summerbutton">Зареєструватись</button>
                 </div>
             </div>
@@ -115,37 +141,36 @@
                     <div class="columnimg">
                         <img src="img/online-education.jpg" alt="online-education-img">
                     </div>
-                    <div class="columntext">
+                    <div class="columntext columnOne">
                         <h3>Online-освіта</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, nihil. Aperiam a, molestiae laudantium doloremque atque?
                         </p>
-                        <button class="columnbutton">Дізнатись більше</button>
+                        <button class="btnOne columnbutton">Дізнатись більше</button>
                     </div>
-
                 </div>
                 <div class="column">
                     <div class="columnimg">
                         <img src="img/yearly-education.jpg" alt="yearly-rducation-img">
                     </div>
-                    <div class="columntext">
+                    <div class="columntext columnTwo">
                         <h3>Курси протягом року</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi rerum natus ab voluptatum fugiat atque.
                         </p>
-                        <button class="columnbutton">Дізнатись більше</button>
+                        <button class="columnbutton btnTwo">Дізнатись більше</button>
                     </div>
                 </div>
                 <div class="column">
                     <div class="columnimg">
                         <img src="img/summer-education.jpg" alt="summer-education-img">
                     </div>
-                    <div class="columntext">
+                    <div class="columntext columnThree">
                         <h3>Літні курси</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magnam tenetur odio eum consectetur! Magni, facere, dolor.
                         </p>
-                        <button class="columnbutton">Дізнатись більше</button>
+                        <button class="columnbutton btnThree">Дізнатись більше</button>
                     </div>
                 </div>
             </div>
@@ -157,37 +182,36 @@
                     <div class="columnimg">
                         <img src="img/online-education.jpg" alt="online-education-img">
                     </div>
-                    <div class="columntext">
+                    <div class="columntext columnFour">
                         <h3>Екскурсії в компанії</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magnam tenetur odio eum consectetur! Magni, facere, dolor.
                         </p>
-                        <button class="columnbutton">Дізнатись більше</button>
+                        <button class="columnbutton btnFour">Дізнатись більше</button>
                     </div>
-
                 </div>
                 <div class="column">
                     <div class="columnimg">
                         <img src="img/yearly-education.jpg" alt="yearly-rducation-img">
                     </div>
-                    <div class="columntext">
+                    <div class="columntext columnFive">
                         <h3>Волонтерство</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magnam tenetur odio eum consectetur! Magni, facere, dolor.
                         </p>
-                        <button class="columnbutton">Дізнатись більше</button>
+                        <button class="columnbutton btnFive">Дізнатись більше</button>
                     </div>
                 </div>
                 <div class="column">
                     <div class="columnimg">
                         <img src="img/summer-education.jpg" alt="summer-education-img">
                     </div>
-                    <div class="columntext">
+                    <div class="columntext columnSix">
                         <h3>Стажування</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magnam tenetur odio eum consectetur! Magni, facere, dolor.
                         </p>
-                        <button class="columnbutton">Дізнатись більше</button>
+                        <button class="columnbutton btnSix">Дізнатись більше</button>
                     </div>
                 </div>
             </div>
@@ -200,14 +224,14 @@
                 <div class="rewiewscolumn">
                     <div class="rewiewsfoto">
                         <img src="img/rewiewman.png" alt="rewies-student-foto">
-                        
+
                     </div>
                     <div>
-                    <h3>Олег Іваненко, батько учня</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit,
-                        et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis.
-                    </p>
+                        <h3>Олег Іваненко, батько учня</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit,
+                            et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis.
+                        </p>
                     </div>
                 </div>
                 <div class="rewiewscolumn">
@@ -216,11 +240,11 @@
 
                     </div>
                     <div>
-                    <h3>Олександр Бойко, учень</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit,
-                        et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis.
-                    </p>
+                        <h3>Олександр Бойко, учень</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit,
+                            et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis.
+                        </p>
                     </div>
                 </div>
                 <div class="rewiewscolumn">
@@ -229,24 +253,24 @@
 
                     </div>
                     <div>
-                    <h3>Олеся Довгунь, учениця</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit,
-                        et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis.
-                    </p>
+                        <h3>Олеся Довгунь, учениця</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit,
+                            et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis.
+                        </p>
                     </div>
                 </div>
                 <div class="rewiewscolumn">
                     <div class="rewiewsfoto">
                         <img src="img/rewiewfather.png" alt="rewies-student-foto">
-                       
+
                     </div>
                     <div>
-                     <h3>Ярослав Карпов, батько учня</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit,
-                        et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis.
-                    </p>
+                        <h3>Ярослав Карпов, батько учня</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit,
+                            et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -254,38 +278,79 @@
         <section>
             <h2>Наша команда</h2>
             <div class="teamsection">
-                <div class="team">
-                    <div class="teamfoto">
-                        <img src="img/team-ihor.jpg" alt="director">
-                    </div>
-                    <p>
-                        Максим Лаврух.Викладач
-                    </p>
+         
+                
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/team-nata.jpg" class="d-block w-100" alt="Tesla Model S">
+                    <h4>Наталія Ярмол</h4>
                 </div>
-                <div class="team">
-                    <div class="teamfoto">
-                        <img src="img/team-iryna.jpg" alt="teacher">
-                    </div>
-                    <p>
-                        Назар Клебан.Вчитель
-                    </p>
+                <div class="carousel-item">
+                    <img src="img/team-ihor.jpg" class="d-block w-100" alt="Tesla Model X Black">
                 </div>
-                <div class="team">
-                    <div class="teamfoto">
-                        <img src="img/team-katya.jpg" alt="teacher">
-                    </div>
-                    <p>
-                        Юлія Захарко.Директор
-                    </p>
+                <div class="carousel-item">
+                    <img src="img/team-nastya.jpg" class="d-block w-100" alt="Tesla Roadster">
                 </div>
-                <div class="team">
-                    <div class="teamfoto">
-                        <img src="img/team-nastya.jpg" alt="teacher">
-                    </div>
-                    <p>
-                        Анна Зарічна.Викладач
-                    </p>
+                 <div class="carousel-item">
+                    <img src="img/team-iryna.jpg" class="d-block w-100" alt="Tesla Roadster">
                 </div>
+                 <div class="carousel-item">
+                    <img src="img/team-roksajpg.jpg" class="d-block w-100" alt="Tesla Roadster">
+                </div>
+                 <div class="carousel-item">
+                    <img src="img/team-katya.jpg" class="d-block w-100" alt="Tesla Roadster">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" ></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" ></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+                
+                
+                
+                <!--<div class="team">-->
+                <!--    <div class="teamfoto">-->
+                <!--        <img src="img/team-ihor.jpg" alt="director">-->
+                <!--    </div>-->
+                <!--    <p>-->
+                <!--        Максим Лаврух.Викладач-->
+                <!--    </p>-->
+                <!--</div>-->
+                <!--<div class="team">-->
+                <!--    <div class="teamfoto">-->
+                <!--        <img src="img/team-iryna.jpg" alt="teacher">-->
+                <!--    </div>-->
+                <!--    <p>-->
+                <!--        Назар Клебан.Вчитель-->
+                <!--    </p>-->
+                <!--</div>-->
+                <!--<div class="team">-->
+                <!--    <div class="teamfoto">-->
+                <!--        <img src="img/team-katya.jpg" alt="teacher">-->
+                <!--    </div>-->
+                <!--    <p>-->
+                <!--        Юлія Захарко.Директор-->
+                <!--    </p>-->
+                <!--</div>-->
+                <!--<div class="team">-->
+                <!--    <div class="teamfoto">-->
+                <!--        <img src="img/team-nastya.jpg" alt="teacher">-->
+                <!--    </div>-->
+                <!--    <p>-->
+                <!--        Анна Зарічна.Викладач-->
+                <!--    </p>-->
+                <!--</div>-->
             </div>
         </section>
     </main>
@@ -321,12 +386,12 @@
         </div>
     </footer>
     <div class="bgroundimg">
-       
+
     </div>
-     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"></script>
-     <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
