@@ -10,7 +10,8 @@
 
  header,
  section,
- footer, #clockdiv {
+ footer,
+ #clockdiv {
   max-width: 980px;
   margin: 30px auto;
  }
@@ -127,7 +128,7 @@
    display: flex;
    align-items: center;
    justify-content: space-around;
-       margin: 15px 0 40px 0;
+   margin: 15px 0 40px 0;
   }
   .hightschool {
    width: 45%;
@@ -278,49 +279,53 @@
  .summercircle:nth-child(4) {
   background-color: #f6a2bf;
  }
-  @media (min-width:375px) {
+
+ @media (min-width:375px) {
   .summercircle {
    width: 61%;
-   
+
   }
  }
+
  @media (min-width:425px) {
   .summercircle {
    width: 54%;
-   
+
   }
  }
-  @media (min-width:500px) {
-   .summercamp {
-    width: 100%;
+
+ @media (min-width:500px) {
+  .summercamp {
+   width: 100%;
    display: grid;
-   grid-template-columns: 1fr 1fr ;
+   grid-template-columns: 1fr 1fr;
    grid-gap: 15px;
   }
-     .summercircle {
+  .summercircle {
    width: 100%;
   }
-  
+
  }
-   @media (min-width:550px) {
-   .summercamp {
-    width: 100%;
+
+ @media (min-width:550px) {
+  .summercamp {
+   width: 100%;
    display: grid;
-   grid-template-columns: 1fr 1fr ;
+   grid-template-columns: 1fr 1fr;
    grid-gap: 15px;
   }
-     .summercircle {
+  .summercircle {
    width: 86%;
   }
-  
+
  }
- 
- 
+
+
  @media (min-width:650px) {
   .summercamp {
-    width: 100%;
+   width: 100%;
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr ;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
    grid-gap: 15px;
   }
   .summercircle p {
@@ -329,7 +334,7 @@
    padding: 0;
   }
   .summercircle {
- 
+
    height: 150px;
   }
  }
@@ -430,17 +435,20 @@
    text-align: right;
   }
  }
-.column:hover {
- 
-    transform: scale(1.1);
-    transition: all 1s;
-    opacity: 1;
-}
-.summercircle:hover{
-    transform: scale(1.1);
-    transition: all 1s;
-    opacity: 1;
-}
+
+ .column:hover {
+
+  transform: scale(1.1);
+  transition: all 1s;
+  opacity: 1;
+ }
+
+ .summercircle:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  opacity: 1;
+ }
+
  .columntext p {
   display: block;
  }
@@ -458,11 +466,12 @@
  .rewiewscolumn img {
   width: 100%;
  }
-.rewiewsfoto{
-     width: 55%;
-    margin: auto;
-}
- 
+
+ .rewiewsfoto {
+  width: 55%;
+  margin: auto;
+ }
+
 
  @media (min-width: 500px) {
   .rewiewstext {
@@ -471,32 +480,32 @@
    grid-template-columns: 1fr 1fr;
    grid-gap: 15px;
   }
-.rewiewscolumn{
- display: block;
-}
-.rewiewsfoto{
-     width: 100%;
-    margin: auto;
-}
- 
+  .rewiewscolumn {
+   display: block;
+  }
+  .rewiewsfoto {
+   width: 100%;
+   margin: auto;
+  }
+
  }
 
  @media (min-width: 750px) {
   .rewiewstext {
    width: 100%;
    display: grid;
-   grid-template-columns: 1fr 1fr ;
+   grid-template-columns: 1fr 1fr;
    grid-gap: 15px;
   }
   .rewiewscolumn img {
    width: 100%;
   }
-  .rewiewscolumn{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  .rewiewscolumn {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
    grid-gap: 0px;
-       align-items: center;
- }
+   align-items: center;
+  }
  }
 
  .teamfoto img {
@@ -506,8 +515,8 @@
  @media (min-width: 500px) {
   .teamsection {
    width: 100%;
-   display:flex;
-   justify-content:center;
+   display: flex;
+   justify-content: center;
   }
   .teamfoto {
    height: 230px;
@@ -521,7 +530,7 @@
   .teamsection {
    width: 100%;
    display: flex;
-   justify-content:center;
+   justify-content: center;
   }
   .teamfoto {
    height: 230px;
@@ -530,117 +539,134 @@
 
  }
 
+ iframe {
+  width: 400px;
+  height: 300px;
+
+ }
+
  .footer {
   display: block;
  }
+
  .contactsimg {
   width: 100%;
   margin: auto;
  }
+
  .contacts {
   text-align: center;
   margin: auto;
  }
+
  form {
   margin: auto;
   text-align: center;
-  background: linear-gradient(to top left, #ffa2fb,#ecfeff );
+  background: linear-gradient(to top left, #ffa2fb, #ecfeff);
  }
- 
- form input{
-  margin:10px;
-  border-radius: 10px;
-      padding: 5px;
- }
- form input:last-child{
-   background: linear-gradient(to top left, #00efff, #ff0bd6);
-       border: 0px;
-    padding: 10px 20px;
-        margin: 15px 0 70px;
 
+ form input {
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
  }
+
+ form input:last-child {
+  background: linear-gradient(to top left, #00efff, #ff0bd6);
+  border: 0px;
+  padding: 10px 20px;
+ }
+
  .contactsimg img {
   width: 100%;
  }
+
  @media (min-width: 750px) {
-  .footer{
+  .footer {
    display: flex;
   }
-  .contactsimg{
+  .contactsimg {
    text-align: center;
    width: 40%;
   }
-  .contacts{
+  .contacts {
    width: 30%;
   }
-  .footerform{
+  .footerform {
    width: 30%;
   }
  }
- 
 
- 
-#prealoder{
-position: fixed;
-left: 0;
-top: 0;
-right:0;
-bottom:0;
-background: #9A12B3;
-z-index: 30;}
- 
-.contpre small{font-size:25px;}
- 
-.contpre{
-width: 250px;
-height: 100px;
-position: absolute;
-left: 50%;top: 48%;
-margin-left:-125px;
-margin-top:-75px;
-color:#fff;
-font-size:40px;
-letter-spacing:-2px;
-text-align:center;
-line-height:35px;}
- 
-#prealoder .svg_anm {
-position: absolute;
-width: 41px;
-height: 41px;
-background: url(../img/ball-triangle.svg) center center no-repeat;
-background-size:41px;    
-margin: -16px 0 0 -16px;}
 
-#clockdiv{
+
+ #prealoder {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #9A12B3;
+  z-index: 30;
+ }
+
+ .contpre small {
+  font-size: 25px;
+ }
+
+ .contpre {
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  margin-left: -125px;
+  margin-top: -75px;
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: -2px;
+  text-align: center;
+  line-height: 35px;
+ }
+
+ #prealoder .svg_anm {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  background: url(../img/ball-triangle.svg) center center no-repeat;
+  background-size: 41px;
+  margin: -16px 0 0 -16px;
+ }
+
+ #clockdiv {
   font-family: sans-serif;
   color: #fff;
   display: inline-block;
   font-weight: 100;
   text-align: center;
   font-size: 30px;
-}
- 
-#clockdiv >div{
+ }
+
+ #clockdiv>div {
   display: inline-block;
-}
- 
-#clockdiv div > span{
+ }
+
+ #clockdiv div>span {
   padding: 15px;
   border-radius: 3px;
   background: #2f353e;
   display: inline-block;
-}
- 
-.smalltext{
+ }
+
+ .smalltext {
   padding-top: 5px;
   font-size: 16px;
-  color:black;
-}
-
-
-  @media (min-width: 600px) {
- #clockdiv p{
-     margin-left: 100px;
-}
+  color: black;
  }
+
+
+ @media (min-width: 600px) {
+  #clockdiv p {
+   margin-left: 100px;
+  }
+ }
+ 
