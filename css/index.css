@@ -12,7 +12,7 @@
  section,
  footer, #clockdiv {
   max-width: 980px;
-  margin: 0 auto;
+  margin: 30px auto;
  }
 
  h1,
@@ -430,7 +430,17 @@
    text-align: right;
   }
  }
-
+.column:hover {
+ 
+    transform: scale(1.1);
+    transition: all 1s;
+    opacity: 1;
+}
+.summercircle:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+    opacity: 1;
+}
  .columntext p {
   display: block;
  }
@@ -496,9 +506,8 @@
  @media (min-width: 500px) {
   .teamsection {
    width: 100%;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-gap: 15px;
+   display:flex;
+   justify-content:center;
   }
   .teamfoto {
    height: 230px;
@@ -511,9 +520,8 @@
  @media (min-width: 750px) {
   .teamsection {
    width: 100%;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-gap: 15px;
+   display: flex;
+   justify-content:center;
   }
   .teamfoto {
    height: 230px;
@@ -559,6 +567,7 @@
    display: flex;
   }
   .contactsimg{
+   text-align: center;
    width: 40%;
   }
   .contacts{
@@ -569,6 +578,7 @@
   }
  }
  
+
  
 #prealoder{
 position: fixed;
