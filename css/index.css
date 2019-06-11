@@ -108,8 +108,8 @@
  }
 
  #hightschooltext {
-  width: 90%;
-  font-family: 'Caveat', cursive;
+  width: 100%;
+  font-family: 'Tenor Sans', sans-serif;
   font-size: 18px;
   margin: auto;
  }
@@ -382,7 +382,7 @@
  }
 
  .columnbutton {
-  background: linear-gradient(to top left, #ff0bd6, #00efff);
+  background: #1e65d2;;
   margin: 20px;
   border-radius: 5px;
   border: 0px;
@@ -393,7 +393,7 @@
 
  .columnbutton:hover {
   color: #d1effa;
-  background: linear-gradient(to top left, #00efff, #ff0bd6);
+  background: #138496;
   cursor: pointer;
  }
 
@@ -443,11 +443,7 @@
   opacity: 1;
  }
 
- .summercircle:hover {
-  transform: scale(1.1);
-  transition: all 1s;
-  opacity: 1;
- }
+
 
  .columntext p {
   display: block;
@@ -471,7 +467,10 @@
   width: 55%;
   margin: auto;
  }
-
+#dots,#more{
+ display: none;
+ 
+}
 
  @media (min-width: 500px) {
   .rewiewstext {
@@ -512,25 +511,99 @@
   width: 100%;
  }
 
+.member1{
+ background-image: url(../img/team-iryna.jpg);
+   height: 235px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.member2{
+ background-image: url(../img/team-katya.jpg);
+   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.member3{
+ background-image: url(../img/team-nata.jpg);
+   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.member4{
+ background-image: url(../img/team-nastya.jpg);
+   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
  @media (min-width: 500px) {
   .teamsection {
    width: 100%;
-   display: flex;
-   justify-content: center;
+   display: grid;
+   
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-gap: 15px;
   }
   .teamfoto {
    height: 230px;
    overflow: hidden;
   }
-
-
  }
+ .team-text{
+  display: none;
+ }
+ .team-text:hover{
+  display: block;
+ }
+ 
+ .member2:after{
+  position: relative;
+  content:'';
+ }
+.member2:hover:after {
+content: 'Анастасія Клебан';
+ background: white;
+ 
+ }
+ .member3:after{
+  position: relative;
+  content:'';
+  
+ }
+.member3:hover:after {
+content: 'Марина Павлюк';
+ background: white;
+ 
+ } .member4:after{
+  position: relative;
+  content:'';
+ }
+.member4:hover:after {
+content: 'Ірина Глова';
+ background: white;
+ 
+ } 
+ .member1:after{
+  position: relative;
+  content:'';
+ }
+.member1:hover:after {
+content: 'Катерина Думанчук';
+ background: white;
+ }
+ 
 
  @media (min-width: 750px) {
   .teamsection {
-   width: 100%;
-   display: flex;
-   justify-content: center;
+    width: 100%;
+   display: grid;
+   
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-gap: 15px;
   }
   .teamfoto {
    height: 230px;
@@ -540,18 +613,20 @@
  }
 
  iframe {
-  width: 400px;
+  width: 500px;
   height: 300px;
 
  }
 
  .footer {
   display: block;
+  text-align: center;
  }
 
  .contactsimg {
   width: 100%;
   margin: auto;
+  text-align: left;
  }
 
  .contacts {
@@ -562,7 +637,7 @@
  form {
   margin: auto;
   text-align: center;
-  background: linear-gradient(to top left, #ffa2fb, #ecfeff);
+  background: beige;
  }
 
  form input {
@@ -572,9 +647,9 @@
  }
 
  form input:last-child {
-  background: linear-gradient(to top left, #00efff, #ff0bd6);
-  border: 0px;
+  background: #6e3391;
   padding: 10px 20px;
+  border: none;
  }
 
  .contactsimg img {
@@ -586,18 +661,23 @@
    display: flex;
   }
   .contactsimg {
-   text-align: center;
-   width: 40%;
+ 
+   width: 60%;
   }
   .contacts {
    width: 30%;
   }
   .footerform {
-   width: 30%;
+  
+   margin: auto;
   }
  }
 
-
+.carousel-item{
+ width: 85%;
+ margin: auto ;
+ 
+}
 
  #prealoder {
   position: fixed;
@@ -638,7 +718,7 @@
  }
 
  #clockdiv {
-  font-family: sans-serif;
+  font-family: 'Tenor Sans', sans-serif;
   color: #fff;
   display: inline-block;
   font-weight: 100;

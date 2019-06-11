@@ -1,9 +1,3 @@
-$(window).on('load', function() {
-    var $preloader = $('#prealoder'),
-        $svg_anm = $preloader.find('.svg_anm');
-    $svg_anm.fadeOut();
-    $preloader.delay(500).fadeOut('slow');
-});
 
 
 
@@ -46,8 +40,26 @@ function initializeClock(id, endtime) {
     var timeinterval = setInterval(updateClock, 1000);
 }
 
-const deadline = new Date(Date.parse(new Date()) + 5 * 24 * 60 * 60 * 1000); 
+const deadline = new Date(Date.parse(new Date()) + 4* 24 * 60 * 60 * 1000); 
 initializeClock('clockdiv', deadline);
 
 
 		
+
+
+
+function readMore() {
+    const text1= document.getElementById('dots');
+    var moreText = document.getElementById('more');
+    var buttonText = document.getElementById('btn1');
+    
+    if (text1.style.display === 'none') {
+       text1.style.display = 'inline';
+        buttonText.innerHTML = 'Дізнатись більше';
+        moreText.style.display = 'none';
+    } else {
+       text1.style.display = 'none';
+        buttonText.innerHTML = 'Згорнути';
+        moreText.style.display = 'inline';
+    }
+}    
